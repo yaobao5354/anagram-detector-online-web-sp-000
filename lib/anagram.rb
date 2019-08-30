@@ -9,16 +9,17 @@ class Anagram
   end 
   
   def match(anagram)
+    resuit = []
     word = @word.split("")
     word = word.sort 
     anagram.each do |anag|
       temp = anag.split("")
       temp = temp.sort 
       if temp == word 
-        return anag.join
+        result << anag
       end 
     end 
-    []
+    result 
   end 
   
 end 
