@@ -9,8 +9,16 @@ class Anagram
   end 
   
   def match(anagram)
-    binding.pry
-    anagram.each 
+    word = @word.split("")
+    word = word.sort 
+    anagram.each do |anag|
+      anag = anag.split("")
+      anag = anag.sort 
+      if anag == word 
+        return anag 
+      end 
+    end 
+    []
   end 
   
 end 
