@@ -15,7 +15,7 @@ class Anagram
       temp = anag.split("")
       temp = temp.sort 
       if temp == word 
-        return anag 
+        return anag.join
       end 
     end 
     []
