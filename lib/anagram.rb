@@ -8,7 +8,7 @@ class Anagram
   end 
   
   def match(anagram)
-    
+    binding.pry
   end 
   
 end 
