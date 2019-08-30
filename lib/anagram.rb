@@ -12,9 +12,9 @@ class Anagram
     word = @word.split("")
     word = word.sort 
     anagram.each do |anag|
-      anag = anag.split("")
-      anag = anag.sort 
-      if anag == word 
+      temp = anag.split("")
+      temp = temp.sort 
+      if temp == word 
         return anag 
       end 
     end 
