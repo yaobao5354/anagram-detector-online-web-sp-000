@@ -9,7 +9,7 @@ class Anagram
   end 
   
   def match(anagram)
-    resuit = []
+    result = []
     word = @word.split("")
     word = word.sort 
     anagram.each do |anag|
