@@ -10,7 +10,7 @@ class Anagram
   
   def match(anagram)
     binding.pry
-    
+    anagram.each 
   end 
   
 end 
